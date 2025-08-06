@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <algorithm> 
+
+int main() {
+    std::string str, reversedStr;
+
+    std::cout << "Enter a string: ";
+    std::getline(std::cin, str);  
+
+    
+    reversedStr = str;
+    std::reverse(reversedStr.begin(), reversedStr.end());
+
+    
+    if (str == reversedStr) {
+        std::cout << "The string is a palindrome." << std::endl;
+    } else {
+        std::cout << "The string is not a palindrome." << std::endl;
+    }
+
+    return 0;
+}
